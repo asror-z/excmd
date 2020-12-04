@@ -1,0 +1,4 @@
+chcp 65001
+
+SET PGPASSWORD={serverPassword}
+pg_dump -U postgres -h {serverIP} -p 5432 {dbname} > "{filePath}"
